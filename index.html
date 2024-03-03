@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Enquiry Chatbot</title>
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+    <style>
+      df-messenger {
+        --df-messenger-bot-message: #878fac;
+        --df-messenger-button-titlebar-color: #df9b56;
+        --df-messenger-chat-background-color: #fafafa;
+        --df-messenger-font-color: #ffffff;
+        --df-messenger-send-icon: #878fac;
+        --df-messenger-user-message: #479b3d;
+        z-index: 999;
+        position: fixed;
+        bottom: 16px;
+        right: 16px;
+      }
+    </style>
+</head>
+<body>
+    <h1>Welcome to College Enquiry Chatbot</h1>
+    <p>Ask me anything about the college, courses, and more.</p>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger
+      location="us-central1"
+      project-id="adept-box-415420"
+      agent-id="202ea8c3-3c6e-4395-b373-14a89c62c103"
+      language-code="en"
+      chat-title="Test"
+      max-query-length="-1">
+    </df-messenger>
+
+</body>
+</html>
